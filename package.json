@@ -1,0 +1,32 @@
+{
+  "name": "job-schedule",
+  "version": "1.0.0",
+  "description": "Schedule Jobs for run one time",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "test": "standard && node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominhhai/job-schedule.git"
+  },
+  "keywords": [
+    "schedule",
+    "job",
+    "task",
+    "runner"
+  ],
+  "author": "Do Minh Hai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominhhai/job-schedule/issues"
+  },
+  "homepage": "https://github.com/dominhhai/job-schedule#readme"
+}
