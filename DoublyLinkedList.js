@@ -23,13 +23,14 @@ module.exports = class DLL {
     if (typeof v !== 'function') {
       return false
     }
-    
+
     let node = this.head
     while (node) {
+      let next = node.next
       if (fn(node)) {
         this.removeLink(node)
       }
-      node = node.next
+      node = next
     }
   }
 
