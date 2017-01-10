@@ -28,7 +28,7 @@ q.when = function (node, cb) {
 
 # Example
 ```javascript
-const Queue = require('../index')
+const Queue = require('job-schedule')
 
 var timerId = null
 var q = new Queue((task, cb) => {
@@ -36,6 +36,7 @@ var q = new Queue((task, cb) => {
   cb()
 }, 1)
 
+// node: {  priority, data }
 q.when = function (node, cb) {
   // start task if it's priority less than 2
   if (node.priority -- < 2) {

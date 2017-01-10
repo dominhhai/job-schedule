@@ -19,6 +19,20 @@ module.exports = class DLL {
     this.length = 0
   }
 
+  removeLinks (fn) {
+    if (typeof v !== 'function') {
+      return false
+    }
+    
+    let node = this.head
+    while (node) {
+      if (fn(node)) {
+        this.removeLink(node)
+      }
+      node = node.next
+    }
+  }
+
   removeLink (node) {
     if (node.prev) {
       node.prev.next = node.next

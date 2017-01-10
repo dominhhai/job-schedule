@@ -63,6 +63,10 @@ module.exports = class Queue {
     this._tasks.empty()
   }
 
+  remove (fn) {
+    return this._tasks.removeLink(fn)
+  }
+
   length () {
     return this._tasks.length
   }
