@@ -20,7 +20,7 @@ module.exports = class DLL {
   }
 
   removeLinks (fn) {
-    if (typeof v !== 'function') {
+    if (typeof fn !== 'function') {
       return false
     }
 
