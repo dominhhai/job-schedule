@@ -24,6 +24,15 @@ q.when = function (node, cb) {
   }
   doSomething(() => cb())
 }
+
+// remove jobs with condition
+// true: removing job
+q.remove(node => {
+  if (matched(node)) {
+    return true
+  }
+  return false
+})
 ```
 
 # Example
